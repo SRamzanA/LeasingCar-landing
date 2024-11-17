@@ -7,8 +7,8 @@
 html,
 body {
     width: 100%;
-    min-height: 70vw;
     display: flex;
+    margin-bottom: 6vw;
     align-items: center;
     flex-direction: column;
     padding: 0.5rem 2rem;
@@ -134,9 +134,11 @@ body {
     border-radius: 2vw;
     font-size: 1.2vw;
     font-weight: 700;
+    transition: 0.4s;
 }
 
 .slider__button-next {
+    width: 8vw;
     position: absolute;
     bottom: 0.9vw;
     right: 1vw;
@@ -144,9 +146,139 @@ body {
 }
 
 .slider__button-prev {
+    width: 6vw;
     position: absolute;
     bottom: 1.6vw;
     right: 5vw;
     cursor: pointer;
 }
+
+
+.main {
+    width: 100%;
+}
+
+.price {
+    width: 100%;
+    margin-top: 7vw;
+}
+
+.price__title {
+    font-size: 3.5vw;
+    width: 60%;
+    line-height: 3.5vw;
+    font-weight: 800;
+    font-family: Arial;
+}
+
+.price__calc-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.calculator {
+    margin-top: 2vw;
+    width: 31%;
+
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.calculator > p {
+    color: #575757;
+    font-size: 1.3vw;
+    margin-bottom: 1.5vw;
+}
+
+.calculator__input {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.07);
+    height: 4vw;
+    border-radius: 1vw;
+    align-items: center;
+    padding: 0 2vw;
+    justify-content: space-between;
+}
+
+.calculator__input > h2,
+.calculator__input > h3 {
+    font-family: Arial;
+    font-size: 1.8vw;
+    color: #575757;
+    font-weight: 800;
+}
+
+.calculator__input > input {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 4vw);
+}
+
+.calculator__input > input[type=range] {
+    -webkit-appearance: none;
+    height: 0.15vw;
+    background-color: #ff9514;
+}
+
+.calculator__input > input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #ff9514;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 1vw;
+}
+
+.price__result-container {
+    width: 100%;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.price__result-summ {
+    color: #575757;
+    width: 31%;
+}
+
+.price__result-summ > p {
+    color: #575757;
+    font-size: 1.3vw;
+    margin-bottom: 0.2vw;
+}
+
+.price__result-summ > span {
+    font-family: Arial;
+    font-size: 3.2vw;
+    font-weight: 800;
+    display: flex;
+}
+
+.price__result-button {
+    width: 31%;
+    height: 5.2vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9514;
+    border-radius: 4vw;
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: #fff;
+    transition: 0.4s;
+}
+
 

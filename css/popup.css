@@ -1,0 +1,134 @@
+
+.popup {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 150;
+}
+
+.popup_not-active {
+    display: none;
+}
+
+.popup__main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.popup__content {
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    position: absolute;
+    background-color: #fff;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.popup__form {
+    width: 50rem;
+}
+
+.popup__close-button {
+    width: 3rem;
+    height: 3rem;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #575757;
+    cursor: pointer;
+    -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    transition: 0.4s;
+}
+
+
+.popup__form > h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.popup__form > h3 {
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #575757;
+    margin-bottom: 3rem;
+}
+
+.popup__input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.popup__input-container > input {
+    width: 45%;
+    height: 3rem;
+    border-radius: 1vw;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.08);
+    padding-left: 1.5vw;
+    font-size: 1rem;
+    color: #575757;
+    font-weight: 600;
+    outline: none;
+    transition: 0.2s;
+}
+
+.popup__container {
+    width: 100%;
+    height: 8rem;
+    border: rgba(0, 0, 0, 0.1) solid 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding: 0 2rem;
+}
+
+.popup__container > p {
+    font-size: 1.3rem;
+    width: 60%;
+    color: #9a9a9a;
+}
+
+.popup__container > p > span {
+    color: #333333;
+}
+
+.popup__button {
+    width: 13rem;
+    height: 3rem;
+    background-color: #ff9514;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+

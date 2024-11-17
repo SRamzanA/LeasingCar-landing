@@ -5,11 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/popup.js" defer></script>
     <script src="js/script.js" defer></script>
     <script src="js/slider.js" defer></script>
     <title>LeasingCar</title>
 </head>
 <body>
+
+    <div id="popup" class="popup popup_not-active">
+        <div class="popup__main">
+            <div class="popup__content">
+                <form class="popup__form">
+                    <div id="popup-closeButton" class="popup__close-button" href="#">&#10006;</div>
+                    <h1>Онлайн-заявка</h1>
+                    <h3>Заполните форму, и мы скоро свяжемся с вами, что бы ответить на все вопросы</h3>
+                    <div class="popup__input-container">
+                        <input type="text" placeholder="Телефон">
+                        <input type="text" placeholder="Имя"> 
+                    </div>
+                    <div class="popup__container">
+                        <p>Нажимая на кнопку «Оставить заявку», я даю согласие <span>на обработку персональных данных</span></p>
+                        <a class="popup__button" href="#"><span>Оставить заявку</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="header">
         <div class="header__nav">
             <div class="header__logo">
@@ -21,17 +44,65 @@
                 <a href="#">Лизинг</a>
                 <a href="#">Каталог</a>
                 <a href="#">О нас</a>
-                <a class="header__button" href="#"><span>Оставить заявку</span></a>
+                <a id="popup-button1" class="header__button" href="#"><span>Оставить заявку</span></a>
             </div>
         </div>
-
         <div class="slider">
             <img id="slider-img" class="slider__bg-img" src="img/slide-img1.png" alt="">
             <h1 class="slider__title">Авто в лизинг для физических лиц</h1>
             <h2 class="slider__subtitle">Получите машину за 5 дней</h2>
-            <a href="#" class="slider__button">Оставить заявку</a>
+            <a id="popup-button2" href="#" class="slider__button"><span>Оставить заявку</span></a>
             <img id="next-slide-button" class="slider__button-prev" src="img/button-prevSlide.png" alt="">
             <img id="prev-slide-button" class="slider__button-next" src="img/button-nextSlide.png" alt="">
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="price">
+            <h1 class="price__title">Рассчитайте стоимость автомобиля в лизинг</h1>
+            <div class="price__calc-container">
+                
+                <div class="calculator">
+                    <p>Стоимость автомобиля</p>
+                    <div class="calculator__input">
+                        <h2 id="rangeValue1">3300000</h2>
+                        <h3>₽</h3>
+                        <input id="inputRange1" type="range" min="1000000" max="4000000" step="100000" value="3300000">
+                    </div>
+                </div>
+
+                <div class="calculator">
+                    <p>Первоначальный взнос</p>
+                    <div class="calculator__input">
+                        <h2><span id="rangeValue2">420000</span>₽</h2>
+                        <h3><span id="procent">9</span>%</h3>
+                        <input id="inputRange2" type="range" min="60000" max="1000000" step="20000" value="420000">
+                    </div>
+                </div>
+
+                <div class="calculator">
+                    <p>Срок лизинга</p>
+                    <div class="calculator__input">
+                        <h2 id="rangeValue3">60</h2>
+                        <h3>мес.</h3>
+                        <input id="inputRange3" type="range" min="5" max="70" step="5" value="60">
+                    </div>
+                </div>
+
+            </div>
+            <div class="price__result-container">
+                <div class="price__result-summ">
+                    <p>Сумма договора лизинга</p>
+                    <span><p id="priceSumm">4455000</p>₽</span>
+                </div>
+
+                <div class="price__result-summ">
+                    <p>Ежемесячный платеж от</p>
+                    <span id="resultPaument">67250</span>
+                </div>
+
+                <a id="popup-button3" class="price__result-button" href="#">Оставить заявку</a>
+            </div>
         </div>
     </div>
 
