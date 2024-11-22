@@ -33,4 +33,11 @@ inputRange3.addEventListener('input', updateValues)
 
 
 
+const dropContainer = document.getElementById("drop-container")
+const buttonDropContainer = document.getElementById("button-dropContainer")
+
+buttonDropContainer.addEventListener("click", function() {
+    dropContainer.classList.toggle("drop-container_not-active")
+})
+
 

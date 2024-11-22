@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/popup.css">
     <script src="js/popup.js" defer></script>
@@ -28,6 +29,10 @@
                         <p>Нажимая на кнопку «Оставить заявку», я даю согласие <span>на обработку персональных данных</span></p>
                         <a class="popup__button" href="#"><span>Оставить заявку</span></a>
                     </div>
+                    <div class="social-links">
+                        <a href="#"><img src="img/icons-whatsapp.png" alt=""></a>
+                        <a href="#"><img src="img/Shape.png" alt=""></a>
+                    </div>
                 </form>
             </div>
         </div>
@@ -41,14 +46,19 @@
                 <h2>лизинговая компания</h2>
             </div>
             <div class="header__links-container">
-                <a href="#">Лизинг</a>
+                <div id="drop-container" class="drop-container drop-container_not-active">
+                    <a href="#">Для личного пользования</a>
+                    <a href="#">Для юридических лиц</a>
+                    <a href="#">Калькулятор</a>
+                </div>
+                <a id="button-dropContainer" href="#">Лизинг</a>
                 <a href="#">Каталог</a>
                 <a href="#">О нас</a>
                 <a id="popup-button1" class="header__button" href="#"><span>Оставить заявку</span></a>
             </div>
         </div>
         <div class="slider">
-            <img id="slider-img" class="slider__bg-img" src="img/slide-img1.png" alt="">
+            <img id="slider-img" class="slider__bg-img" src="slider-img/slide-img1.png" alt="">
             <h1 class="slider__title">Авто в лизинг для физических лиц</h1>
             <h2 class="slider__subtitle">Получите машину за 5 дней</h2>
             <a id="popup-button2" href="#" class="slider__button"><span>Оставить заявку</span></a>
