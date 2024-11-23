@@ -1,64 +1,99 @@
 
 .slider {
     width: 100%;
+    height: 35vw;
+    background-color: grey;
+    display: flex;
     position: relative;
     margin-top: 4vw;
+    border-radius: 3vw;
+    overflow: hidden;
 }
 
-.slider__bg-img {
+.slider__image {
+    position: absolute;
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    height: 100%;
 }
 
-.slider__title {
-    position: absolute;
-    color: #fff;
-    font-size: 4vw;
-    top: 4vw;
-    left: 4vw;
+.slider__image > img {
+    height: 100%;
+    width: auto;
+    transform: translateX(-5%);
+}
+
+.slider__slide-container {
     width: 50%;
-    line-height: 3.5vw;
-    z-index: 20;
+    height: 100%;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.slider__subtitle {
-    position: absolute;
+.slider__slide {
+    width: 80%;
+    height: 70%;
+}
+
+.slider__slide > h1 {
+    font-size: 4vw;
+    line-height: 3.3vw;
     color: #fff;
-    font-size: 2.3vw;
-    font-weight: 700;
-    top: 13vw;
-    left: 4vw;
+    margin-bottom: 2vw;
 }
 
-.slider__button {
-    position: absolute;
-    top: 17vw;
-    left: 4vw;
-    padding: 1vw 1.9vw;
-    text-decoration: none;
+.slider__slide > h3 {
+    font-size: 2.2vw;
+    color: #fff;
+    margin-bottom: 1.5vw;
+}
+
+.slider__slide > a {
     background-color: #ff9514;
+    width: 12vw;
+    height: 4vw;
+    border-radius: 5vw;
+    text-decoration: none;
     color: #fff;
-    border-radius: 2vw;
-    font-size: 1.2vw;
-    font-weight: 700;
-    transition: 0.4s;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+.slider__navigation {
+    width: 50%;
+    height: 100%;
+    z-index: 15;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    padding: 3vw;
+}
+
+.slider__button-prev,
 .slider__button-next {
-    width: 6vw;
-    position: absolute;
-    bottom: 1.8vw;
-    right: 1vw;
+    width: 3vw;
+    height: 3vw;
+    overflow: hidden;
+    margin: 0.5vw;
     cursor: pointer;
 }
 
 .slider__button-prev {
-    width: 6vw;
-    position: absolute;
-    bottom: 1.6vw;
-    right: 5vw;
-    cursor: pointer;
+    width: 2vw;
+    height: 2vw;
 }
+
+.slider__button-prev > img,
+.slider__button-next > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 

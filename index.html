@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/adapt.css">
     <script src="js/popup.js" defer></script>
@@ -58,14 +58,26 @@
                 <a id="popup-button1" class="header__button" href="#"><span>Оставить заявку</span></a>
             </div>
         </div>
+
+
         <div class="slider">
-            <img id="slider-img" class="slider__bg-img" src="slider-img/slide-img1.png" alt="">
-            <h1 class="slider__title">Авто в лизинг для физических лиц</h1>
-            <h2 class="slider__subtitle">Получите машину за 5 дней</h2>
-            <a id="popup-button2" href="#" class="slider__button"><span>Оставить заявку</span></a>
-            <img id="next-slide-button" class="slider__button-prev" src="img/button-prevSlide.png" alt="">
-            <img id="prev-slide-button" class="slider__button-next" src="img/button-nextSlide.png" alt="">
+            <div class="slider__image">
+                <img id="slider-img" src="slider-img/slide-img1.png" alt="">
+            </div>
+            <div class="slider__slide-container">
+                <div class="slider__slide"> 
+                    <h1>Авто в лизинг для физических лиц</h1>
+                    <h3>Получите машину за 5 дней</h3>
+                    <a id="popup-button2" href="#"><b>Оставить заявку</b></a>
+                </div>
+            </div>
+            <div class="slider__navigation">
+                <div id="prev-slide-button" class="slider__button-prev"><img src="slider-img/button-prevSlide.png" alt=""></div>
+                <div id="next-slide-button" class="slider__button-next"><img src="slider-img/button-nextSlide.png" alt=""></div>
+            </div>
         </div>
+
+
     </div>
 
     <div class="main">
