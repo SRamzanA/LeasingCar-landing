@@ -41,3 +41,13 @@ buttonDropContainer.addEventListener("click", function() {
 })
 
 
+const openHambMenu = document.getElementById("menu-hamburger-open")
+const blurHambMenu = document.getElementById("blur-menu-hamburger")
+const closeHambMenu = document.getElementById("close-menu-hamburger")
+
+function openAndCloseHambMenu() {
+    blurHambMenu.classList.toggle("hamb-menu_not-active")
+}
+
+openHambMenu.addEventListener("click", openAndCloseHambMenu)
+closeHambMenu.addEventListener("click", openAndCloseHambMenu)
