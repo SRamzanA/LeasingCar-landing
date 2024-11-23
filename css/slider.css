@@ -2,6 +2,7 @@
 .slider {
     width: 100%;
     position: relative;
+    margin-top: 4vw;
 }
 
 .slider__bg-img {
