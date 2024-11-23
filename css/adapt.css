@@ -1,5 +1,5 @@
 
-@media(width <= 1024px) and (width > 768px){
+@media(width <= 1024px) and (width > 768px) {
     .header__logo > a {
         font-size: 4vw;
     }
@@ -18,8 +18,108 @@
     }
 
     .slider {
+        height: 45vw;
         margin-top: 5vw;
     }
+    
+    .slider__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slider__image > img {
+        height: 100%;
+        width: auto;
+        transform: translateX(-20%);
+    }
+
+    .slider__slide-container {
+        width: 80%;
+        height: 100%;
+    }
+
+    .slider__slide > h1 {
+        font-size: 6vw;
+        line-height: 4.7vw;
+    }
+
+    .slider__slide > h3 {
+        font-size: 3vw;
+    }
+
+    .slider__slide > a {
+        width: 16vw;
+        height: 5vw;
+        font-size: 1.8vw;
+    }
+
+    .slider__navigation {
+        width: 20%;
+        padding: 4vw;
+    }
+
+    .slider__button-prev,
+    .slider__button-next {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .slider__button-prev {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .price__title {
+        font-size: 5vw;
+        width: 80%;
+        line-height: 5vw;
+    }
+
+    .calculator {
+        width: 100%;
+    }
+
+    .calculator > p {
+        font-size: 2vw;
+    }
+
+    .calculator__input {
+        height: 5vw;
+    }
+
+    .calculator__input > h2,
+    .calculator__input > h3 {
+        font-size: 2.5vw;
+    }
+
+    .price__result-summ {
+        width: 40%;
+    }
+
+    .price__result-summ > p {
+        font-size: 3vw;
+    }
+
+    .price__result-summ > span {
+        font-size: 4vw;
+    }
+
+    .price__result-button {
+        width: 35%;
+        height: 7vw;
+        font-size: 3vw;
+        margin-top: 2.5vw;
+    }   
+
+    .popup__form {
+        width: 45rem;
+    }
+
 }
+
+
+
+
 
 
