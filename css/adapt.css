@@ -100,13 +100,15 @@
 }
 
 @media(width > 1024px) {
-    .menu-hamburger {
+    .menu-hamburger,
+    .hamb-menu {
         display: none;
     }
 }
 
 @media(width <= 1024px) and (width > 768px) {
-    .menu-hamburger {
+    .menu-hamburger,
+    .hamb-menu {
         display: none;
     }
 
@@ -226,6 +228,17 @@
         width: 45rem;
     }
 
+    .social-links {
+        margin-top: 3vw;
+    }
+
+    .social-links > a {
+        border: #e1e1e1 solid 0.3vw;
+        border-radius: 10vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
 }
 
 @media(width <= 768px) and (width > 320px) {
@@ -333,7 +346,7 @@
     }
 
     .popup__form {
-        width: 80vw;
+        width: 90vw;
     }
 
     .popup__close-button {
@@ -341,38 +354,39 @@
         height: 6vw;
         top: 6vw;
         right: 6vw;
-        border-radius: 6vw;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .popup__form > h1 {
         font-size: 8vw;
     }
-    
+
     .popup__form > h3 {
         width: 60%;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     .popup__input-container > input {
         width: 45%;
-        height: 3rem;
-        border-radius: 3vw;
-        padding-left: 2vw;
+        height: 6vw;
+        border-radius: 10vw;
+        padding-left: 3vw;
+        font-size: 2.4vw;
     }
 
     .popup__container {
-        height: 6rem;
-        border: rgba(0, 0, 0, 0.1) solid 0.1rem;
+        margin-top: 4vw;
+        height: 10vw;
+        border: rgba(0, 0, 0, 0.1) solid 0.2vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-radius: 2rem;
-        padding: 0 2rem;
+        border-radius: 2vw;
+        padding: 0 4vw;
     }
 
     .popup__container > p {
-        font-size: 2.5vw;
+        font-size: 2.7vw;
         width: 70%;
         color: #9a9a9a;
     }
@@ -382,31 +396,247 @@
     }
 
     .popup__button {
-        width: 8rem;
-        height: 2.5rem;
-        font-size: 0.8rem;
-        border-radius: 1rem;
+        width: 20vw;
+        height: 6vw;
+        font-size: 2.3vw;
+        border-radius: 3vw;
     }
+
+    .social-links {
+        margin-top: 3vw;
+    }
+
+    .social-links > a {
+        border: #e1e1e1 solid 0.3vw;
+        border-radius: 10vw;
+        width: 6vw;
+        height: 6vw;
+    }
+
 
 }
 
 @media(width <= 320px) and (width > 1px) {
     .header__logo > a {
-        font-size: 5vw;
+        font-size: 8vw;
     }
 
     .vertical-line {
-        margin: 0 2vw;
-        height: 3vw;
+        margin: 0 3vw;
+        height: 4vw;
     }
 
     .header__logo > h2 {
-        font-size: 2.2vw;
+        font-size: 4vw;
     }
 
     .header__links-container {
         display: none;
     }
+
+    .menu-hamburger {
+        width: 6vw;
+        height: 0.38vw;
+    }
+
+    .menu-hamburger::after {
+        transform: translateY(1.3vw);
+    }
+    
+    .menu-hamburger::before {
+        transform: translateY(-1.3vw);
+    }
+
+    .slider {
+        position: absolute;
+        width: 100vw;
+        height: 90vw;
+    }
+
+    .slider__image > img {
+        transform: translateX(-50%);
+    }
+
+    .slider__slide-container {
+        width: 100%;
+    }
+
+    .slider__slide > h1 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .slider__slide > h3 {
+        display: none;
+    }
+
+    .slider__slide > a {
+        width: 40vw;
+        height: 10vw;
+        font-size: 4vw;
+        margin-top: 7vw;
+    }
+
+    .slider__navigation {
+        display: none;
+    }
+
+    .main {
+        margin-top: 100vw;
+    }
+
+    .price__title {
+        font-size: 9vw;
+        line-height: 7vw;
+    }
+
+    .calculator {
+        margin-top: 6vw;
+        width: 100%;
+    }
+
+    .calculator > p {
+        font-size: 6vw;
+    }
+
+    .calculator__input {
+        height: 15vw;
+        border-radius: 5vw;
+    }
+
+    .calculator__input > h2,
+    .calculator__input > h3 {
+        font-size: 7vw;
+    }
+
+    .calculator__input > input[type=range] {
+        height: 0.5vw;
+    }
+
+    .calculator__input > input::-webkit-slider-thumb {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 3vw;
+    }
+
+    .price__result-container {
+        margin-top: 10vw;
+    }
+
+    .price__result-summ {
+        width: 70%;
+        margin-bottom: 5vw;
+    }
+
+    .price__result-summ > p {
+        font-size: 6vw;
+    }
+
+    .price__result-summ > span {
+        font-size: 9vw;
+    }
+
+    .price__result-button {
+        width: 80%;
+        height: 15vw;
+        font-size: 7vw;
+        margin-top: 2.5vw;
+        border-radius: 7vw;
+    }   
+
+    .hamb-menu__content {
+        width: 70%;
+        height: 100%;
+        background-color: #fff;
+    }   
+
+    .hamb-menu__close-button {
+        width: 100%;
+        height: 6vw;
+        font-size: 6vw;
+        padding-right: 6vw;
+        padding-top: 10vw;
+    }
+    
+    .hamb-menu__links-container > a {
+        font-size: 8vw;
+        padding-bottom: 1vw;
+    }
+
+    .hamb-menu__main > a {
+        width: 80%;
+        height: 15vw;
+        border-radius: 10vw;
+        font-size: 6vw;
+        margin-bottom: 10vw;
+    }
+
+    .popup__form {
+        width: 90vw;
+    }
+
+    .popup__close-button {
+        width: 10vw;
+        height: 10vw;
+        top: 10vw;
+        right: 10vw;
+        font-size: 6vw;
+    }
+
+    .popup__form > h1 {
+        font-size: 10vw;
+        margin-bottom: 3vw;
+    }
+
+    .popup__form > h3 {
+        width: 80%;
+        font-size: 5vw;
+    }
+
+    .popup__input-container > input {
+        width: 100%;
+        height: 10vw;
+        border-radius: 10vw;
+        padding-left: 3vw;
+        font-size: 4.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .popup__container {
+        margin-top: 6vw;
+        height: auto;
+        border: none;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .popup__container > p {
+        font-size: 4.5vw;
+        width: 70%;
+        color: #9a9a9a;
+        text-align: center;
+    }
+
+    .popup__button {
+        width: 70vw;
+        height: 15vw;
+        font-size: 7vw;
+        border-radius: 10vw;
+        margin-bottom: 6vw;
+    }
+
+    .social-links {
+        margin-top: 5vw;
+    }
+
+    .social-links > a {
+        border: #e1e1e1 solid 0.8vw;
+        border-radius: 10vw;
+        width: 13vw;
+        height: 13vw;
+        margin: 1.3vw;
+    }
+
 }
 
 

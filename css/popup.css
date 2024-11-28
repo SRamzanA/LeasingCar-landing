@@ -28,26 +28,26 @@
     border-top-left-radius: 5vw;
     border-top-right-radius: 5vw;
     display: flex;
-    align-items: center;
+    padding-top: 4vw;
     justify-content: center
 }
 
 .popup__form {
-    width: 50rem;
+    width: 80vw;
 }
 
 .popup__close-button {
-    width: 3rem;
-    height: 3rem;
+    width: 5vw;
+    height: 5vw;
     background-color: #e0e0e0;
     position: absolute;
-    top: 5rem;
-    right: 5rem;
-    border-radius: 2rem;
+    top: 5vw;
+    right: 5vw;
+    border-radius: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     color: #575757;
     cursor: pointer;
     -webkit-user-select: none;
@@ -60,13 +60,13 @@
 
 
 .popup__form > h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 6vw;
+    margin-bottom: 1vw;
 }
 
 .popup__form > h3 {
     width: 60%;
-    font-size: 1.2rem;
+    font-size: 2vw;
     font-weight: 400;
     color: #575757;
     margin-bottom: 3rem;
@@ -77,17 +77,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-bottom: 2vw;
 }
 
 .popup__input-container > input {
     width: 45%;
-    height: 3rem;
-    border-radius: 1vw;
+    height: 5vw;
+    border-radius: 6vw;
     border: none;
     background-color: rgba(0, 0, 0, 0.08);
     padding-left: 1.5vw;
-    font-size: 1rem;
+    font-size: 1.5vw;
     color: #575757;
     font-weight: 600;
     outline: none;
@@ -96,17 +96,17 @@
 
 .popup__container {
     width: 100%;
-    height: 8rem;
-    border: rgba(0, 0, 0, 0.1) solid 0.1rem;
+    height: 8vw;
+    border: rgba(0, 0, 0, 0.1) solid 0.2vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 2rem;
-    padding: 0 2rem;
+    border-radius: 2vw;
+    padding: 0 3vw;
 }
 
 .popup__container > p {
-    font-size: 1.3rem;
+    font-size: 1.8vw;
     width: 60%;
     color: #9a9a9a;
 }
@@ -116,16 +116,16 @@
 }
 
 .popup__button {
-    width: 13rem;
-    height: 3rem;
+    width: 20vw;
+    height: 4vw;
     background-color: #ff9514;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem;
-    border-radius: 2rem;
+    font-size: 2vw;
+    border-radius: 10vw;
     font-weight: 600;
     position: relative;
     overflow: hidden;
@@ -133,19 +133,19 @@
 
 .social-links {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .social-links > a {
-    border: #e1e1e1 solid 0.2rem;
-    border-radius: 5rem;
-    width: 3rem;
-    height: 3rem;
+    border: #e1e1e1 solid 0.3vw;
+    border-radius: 5vw;
+    width: 3.5vw;
+    height: 3.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.7rem;
+    margin: 0.7vw;
 }
